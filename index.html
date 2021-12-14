@@ -21,7 +21,8 @@
                 <nav>
                     <ul class = "nav_links">
                         <li><a href="">Home</a></li>
-                        <li><a href="">Our Clients</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="">Contact</a></li>
         
                     </ul>
                 </nav>
@@ -43,15 +44,33 @@
          <aside class="left-sidebar">
 
             <div id = "buttons">
-                <button id = "forest" onclick="Forest()">Forest</button>
-                <button id = "room" onclick="Room()">Room</button>
-                <button>Library</button>
-                <button>Sea</button>
-                <button>City</button>
+                <button class = "buttonPic" onclick="Forest()">Forest</button>
+                <button class = "buttonPic" onclick="Room()">Room</button>
+                <button class = "buttonPic" onclick="Library()">Library</button>
+                <button class = "buttonPic">Sea</button>
+                <button class = "buttonPic">City</button>
             </div>
 
          </aside>
-         <aside class="right-sidebar">RIGHT SIDEBAR</aside>
+         <aside class="right-sidebar">
+
+            <div class="todolist">
+
+                <div class="todolisttitle"><h2>Todo list</h2></div>
+
+                <div id="newtask">
+                    <input type="text" id="textboxtodo" placeholder="Task to be done..">
+                    <button id="push" onclick="Removetext()">Add</button>
+
+                    <div id="tasks"></div>
+                </div>
+
+
+            </div>
+
+
+
+         </aside>
     </div>
     <footer>FOOTER</footer>
 </div>
