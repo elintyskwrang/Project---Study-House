@@ -3,11 +3,19 @@ function Forest() {
 }
 
 function Room() {
-    document.body.style.backgroundImage = "url('images/SPRUCE2.jpg')";
+    document.body.style.backgroundImage = "url('images/studycorner.gif')";
 }
 
 function Library() {
     document.body.style.backgroundImage = "url('images/Library.jpg')";
+}
+
+function City() {
+    document.body.style.backgroundImage = "url('images/City.jpg')";
+}
+
+function thankyou() {
+    alert ("Thank you, we will read your message shortly! :D");
 }
 
 
@@ -24,10 +32,12 @@ document.querySelector('#push').onclick = function(){
                     ${document.querySelector('#newtask input').value}
                 </span>
                 <button class="delete">
-                    <i class="far fa-trash-alt">done</i>
+                    <i class="fa fa-trash-alt">done</i>
                 </button>
             </div>
-        `;
+
+        `
+        ;
 
         var current_tasks = document.querySelectorAll(".delete");
         for(var i=0; i<current_tasks.length; i++){
@@ -37,5 +47,5 @@ document.querySelector('#push').onclick = function(){
         }
     }
 }
-    
+
 

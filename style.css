@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
 
 /* RESET */
 * {
@@ -6,6 +8,8 @@
     padding: 0;
     margin: 0;
 }
+
+
 
 .title{
     color:gray;
@@ -59,6 +63,10 @@ body {
     text-align: center;
     font-size: 24px;
     line-height: 3;
+    background-image: url("/images/laura-barbato-P4MaYHgQ8HQ-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
 
 }
 .header {
@@ -72,22 +80,17 @@ body {
     border-radius: 10px;
     
 }
-main {
 
-}
-footer {
-
-}
 .left-sidebar {
     background-color: rgba(0,0,0,.1);
     margin-top: 20px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
     
 }
-.right-sidebar {
 
-}
 
 .todolisttitle{
     display: flex;
@@ -130,7 +133,7 @@ footer {
 
 #newtask input:focus{
     outline: none;
-    border-color:palevioletred;
+    border-color: #2F3C7E;
 }
 
 #push {
@@ -148,6 +151,10 @@ footer {
     font-family: 'Poppins',sans-serif;
 }
 
+#push:hover{
+    background-color: #2F3C7E;
+}
+
 
 #tasks{
     border-radius: 10px;
@@ -162,9 +169,9 @@ footer {
     border-radius: 5px;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid lightgray;
+    border: 1px solid #FBEAEB;
     cursor: pointer;
-    background-color: lightgray;
+    background-color: #FBEAEB;
     height: 30px;
     margin-bottom: 8px;
     padding: 5px 10px;
@@ -174,10 +181,11 @@ footer {
     font-family: 'Poppins',sans-serif;
     font-size: 15px;
     font-weight: 400;
+    color:black;
 }
 
 .task button{
-    background-color: palevioletred;
+    background-color: #2F3C7E;
     color: #ffffff;
     border: none;
     cursor: pointer;
@@ -187,12 +195,195 @@ footer {
     border-radius: 5px;
 }
 
+  
+  footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+	background-color: #2c292f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed h3{
+	color:  #FBEAEB;
+	font:'Shadows Into Light', cursive;
+	margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+
+.footer-distributed h3 span{
+	color: #2F3C7E;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #2F3C7E;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
 
 .container, 
 .content {
     display: flex;
     flex-direction: column;
 }
+
+
 
 @media all and (min-width: 768px) {
     .content {
@@ -213,3 +404,7 @@ footer {
         order: 3;
     }
 }
+
+
+
+

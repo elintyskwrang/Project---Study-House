@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="splide/dist/css/splide.min.css">
+    <script src="splide/dist/js/splide.min.js"></script>
+</head>
+<body>
+
+    <header>
+    
+        <div class="header">
+
+            <div class="title">
+                <h1>STUDY CORNER</h1>
+            </div>
+
+            <div class="navigation">
+                <nav>
+                    <ul class = "nav_links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+        
+                    </ul>
+                </nav>
+            </div>
+    
+        </div>
+
+
+        
+
+    </header>
+
+
+    <div class = "splide">
+        <div class = "splide__track">
+            <div class = "splide__list">
+                <li class = "splide__slide splide__side__1">
+                    slide 1
+                </li>
+                <li class = "splide__slide splide__slide__2">
+                    slide 2
+                </li>
+                <li class = "splide__slide splide__slide__3">
+                    slide 3
+                </li>
+                <li class = "splide__slide">
+                    slide 4
+                </li>
+                <li class = "splide__slide">
+                    slide 5
+                </li>
+                <li class = "splide__slide">
+                    slide 6
+                </li>
+            </div>
+    
+        </div>
+
+    </div>
+
+    <script>
+        new Splide(".splide", {
+            type: "loop",
+            perPage: 1,
+            autoplay: true
+        }) .mount();
+
+    </script>
+
+</body>
+
+
+</html>
