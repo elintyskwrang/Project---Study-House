@@ -1,9 +1,11 @@
+//change backgorund
+
 function Forest() {
-    document.body.style.backgroundImage = "url('images/rain.gif')";
+    document.body.style.backgroundImage = "url('images/Forest.jpg')";
 }
 
 function Room() {
-    document.body.style.backgroundImage = "url('images/studycorner.gif')";
+    document.body.style.backgroundImage = "url('images/Room.jpg')";
 }
 
 function Library() {
@@ -13,12 +15,34 @@ function Library() {
 function City() {
     document.body.style.backgroundImage = "url('images/City.jpg')";
 }
-
-function thankyou() {
-    alert ("Thank you, we will read your message shortly! :D");
+function Sea() {
+    document.body.style.backgroundImage = "url('images/Sea.jpg')";
 }
 
 
+
+// Contact form validation
+
+function isNotEmpty(){
+    if(document.getElementById("Name").value.length == 0 )
+    {
+        alert("You must fill all the boxes")
+    } else if(document.getElementById("Email").value.length == 0 )
+    {
+        alert("You must fill in all the boxes")
+    } else if(document.getElementById("Phone").value.length == 0 )
+    {
+        alert("You must fill in all the boxes")
+    } else if(document.getElementById("Message").value.length == 0 )
+    {
+        alert("You must fill in all the boxes")
+    } else {
+        alert("Thank you for contacting us.")
+    }
+}
+
+
+//todo list
 
 document.querySelector('#push').onclick = function(){
     if(document.querySelector('#newtask input').value.length == 0){
@@ -32,7 +56,7 @@ document.querySelector('#push').onclick = function(){
                     ${document.querySelector('#newtask input').value}
                 </span>
                 <button class="delete">
-                    <i class="fa fa-trash-alt">done</i>
+                    <i>done</i>
                 </button>
             </div>
 

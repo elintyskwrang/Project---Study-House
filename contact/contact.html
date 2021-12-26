@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STUDY CORNER</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/studycornericon.ico">
 </head>
 
 <body>
@@ -42,18 +44,62 @@
 			<div class="left"></div>
 			<div class="right">
 				<h2>Contact Us</h2>
-				<input type="text" class="field" placeholder="Your Name">
-				<input type="text" class="field" placeholder="Your Email">
-				<input type="text" class="field" placeholder="Phone">
-				<textarea placeholder="Message" class="field"></textarea>
-				<button class="btn" onclick="thankyou()">Send</button>
+				<input type="text" class="field" id="Name" placeholder="Your Name">
+				<input type="text" class="field" id ="Email" placeholder="Your Email">
+				<input type="text" class="field" id="Phone" placeholder="Phone">
+				<textarea placeholder="Message" class="field" id="Message"></textarea>
+				<button class="btn" onclick="isNotEmpty()">Send</button>
 			</div>
 		</div>
 	</div>
          
     
 
-<footer>FOOTER</footer>
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Study<span>Corner</span></h3>
+    
+            <p class="footer-links">
+                <a href="/index.html">Home</a>
+                |
+                <a href="./gallery/gallery.html">Gallery</a>
+                |
+                <a href="./contact/contact.html">Contact</a>
+            </p>
+    
+            <p class="footer-company-name">© 2021 Study Corner</p>
+        </div>
+    
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                  <p><span>Östrabo 1, Teknikprogrammet</span>
+                    Uddevalla, Sverige</p>
+            </div>
+    
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+46 xxxxxxxx</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="0301elty@gapp.uddevalla.se">0301elty@gapp.uddevalla.se</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About Study Corner</span>
+                A website that is used to help people all across the world to stay productive, and keep the grind going!</p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
 
 <script src = "../eventHandler.js"></script>
 
